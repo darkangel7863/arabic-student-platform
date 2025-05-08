@@ -1,0 +1,23 @@
+.login-form {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  padding: 1rem;
+
+}
+
+.login-form>* {
+  margin-bottom: 2rem;
+}
+
+.login-form input {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}

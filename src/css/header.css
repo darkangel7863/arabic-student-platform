@@ -1,0 +1,16 @@
+.header {
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #777;
+}
+
+.title {
+  font-size: 4rem;
+  padding: .9rem 1.8rem;
+}
+
+.LanguageBtn {
+  height: 2rem;
+  padding: 1.5rem 3rem;
+}

@@ -1,0 +1,50 @@
+/* 
+
+.register-form>* {
+  margin-bottom: 2rem;
+}
+
+.register-form input {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+} */
+.input-field {
+  font-size: 2rem;
+}
+
+.register-form {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.register-form label {
+  margin-right: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.register-form input {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.register-form select {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
