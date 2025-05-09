@@ -3,8 +3,11 @@ import { createContext, useContext, useState } from 'react';
 const StudentContext = createContext();
 function StudentProvider({ children }) {
   const [language, setLanguage] = useState('English');
+  const [isStudent, setIsStudent] = useState(false);
   return (
-    <StudentContext.Provider value={{ language, setLanguage }}>
+    <StudentContext.Provider
+      value={{ language, setLanguage, isStudent, setIsStudent }}
+    >
       {children}
     </StudentContext.Provider>
   );

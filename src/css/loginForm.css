@@ -21,3 +21,9 @@
   padding: 1rem;
   border-radius: 10px;
 }
+
+.link {
+  color: #fff;
+  display: block;
+  text-align: center;
+}
