@@ -1,7 +1,7 @@
 import { useStudent } from '../context/StudentContext';
 import Button from './Button';
 import '../css/LoginForm.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Message from './Message';
 function LoginForm() {
@@ -9,6 +9,7 @@ function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
   function handleLogin(e) {
     e.preventDefault();
     const userEmail = JSON.parse(localStorage.getItem('email'));
@@ -23,14 +24,9 @@ function LoginForm() {
       );
       return;
     }
-    console.log(email.type, email);
-    console.log(password.type, password);
-    console.log(userEmail.type, userEmail);
-    console.log(userPassword.type, userPassword);
-
     if (
-      email.toString() !== userEmail.toString() ||
-      password.toString() !== userPassword.toString()
+      email.toString() !== userEmail?.toString() ||
+      password.toString() !== userPassword?.toString()
     ) {
       setError(
         `${
@@ -41,6 +37,7 @@ function LoginForm() {
       );
       return;
     }
+    navigate('/learning', { replace: true });
     setError('');
   }
   return (
@@ -68,7 +65,6 @@ function LoginForm() {
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
-
         <Button onClick={handleLogin}>
           {language === 'English' ? 'Login' : 'تسجيل الدخول'}
         </Button>

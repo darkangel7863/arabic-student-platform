@@ -7,6 +7,7 @@ import Homepage from './Pages/Homepage';
 import PageNotFound from './Pages/PageNotFound';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
+import LearningPage from './Pages/LearningPage';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="login" element={<LoginForm />} />
             <Route path="register" element={<RegisterForm />} />
           </Route>
+          <Route path="learning" element={<LearningPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </StudentProvider>

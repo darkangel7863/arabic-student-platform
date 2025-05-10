@@ -1,0 +1,36 @@
+.LearningRow {
+  display: flex;
+}
+
+.lesson {
+  width: 66%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(.././Lesson.jpg);
+  background-position: ;
+}
+
+.sideBar {
+  text-align: center;
+  height: 100vh;
+  width: 33%;
+}
+
+.lesson-title {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.lesson-btns {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.test-btn {
+  background-color: #5500ff;
+  color: antiquewhite;
+}

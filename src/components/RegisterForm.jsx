@@ -3,7 +3,7 @@ import { useStudent } from '../context/StudentContext';
 import '../css/registerForm.css';
 import Button from './Button';
 import Message from './Message';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function RegisterForm() {
   const [fullName, setFullName] = useState('');
@@ -15,7 +15,7 @@ function RegisterForm() {
   const [level, setLevel] = useState('');
   const [error, setError] = useState('');
   const { language } = useStudent();
-
+  const navigate = useNavigate();
   function handleAdd(e) {
     e.preventDefault();
     console.log(fullName, password, phone, email, confirmPassword, dob, level);
@@ -54,6 +54,7 @@ function RegisterForm() {
     localStorage.setItem('dob', JSON.stringify([dob]));
     localStorage.setItem('password', JSON.stringify([password]));
     localStorage.setItem('level', JSON.stringify([level]));
+    navigate('/learning');
     setError('');
   }
   return (

@@ -26,4 +26,9 @@
   color: #fff;
   display: block;
   text-align: center;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }

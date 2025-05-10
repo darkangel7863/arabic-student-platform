@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useStudent } from '../context/StudentContext';
 import '../css/header.css';
 import Button from './Button';
@@ -21,7 +22,11 @@ function Header() {
         >
           {language === 'English' ? 'عربي' : 'English'}
         </Button>
-        {/* <button className="btn btn-lang"></button> */}
+        <Link to="/">
+          <Button classes="btn-home">
+            {language === 'English' ? 'Home' : 'الصفحة الرئيسية'}
+          </Button>
+        </Link>
       </div>
     </header>
   );
