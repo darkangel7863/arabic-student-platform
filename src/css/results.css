@@ -1,0 +1,25 @@
+.app {
+  font-size: 2rem;
+}
+
+.results {
+  text-align: center;
+}
+
+.results-title {
+  font-size: 5rem;
+}
+
+.strength-points {
+  font-size: 3rem;
+  list-style: circle;
+}
+
+.score {
+  margin-top: 20rem;
+  font-size: 7rem;
+}
+
+.back-to-lesson {
+  font-size: 4rem;
+}
