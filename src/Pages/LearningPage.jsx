@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import StatusBar from '../components/StatusBar';
 import { useStudent } from '../context/StudentContext';
-import '../css/LearningPage.css';
+import '../css/learningPage.css';
 function LearningPage() {
   const { language } = useStudent();
   return (
