@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import StatusBar from '../components/StatusBar';
 import { useStudent } from '../context/StudentContext';
@@ -29,12 +30,13 @@ function LearningPage() {
                 ? 'Lesson 3 : Nouns types'
                 : 'الدرس الثالث : أنواع الأسماء'}
             </Button>
-
-            <Button classes="test-btn">
-              {language === 'English'
-                ? 'Test your knowledge'
-                : 'اختبر ما تعلمت'}
-            </Button>
+            <Link to="/upload">
+              <Button classes="test-btn">
+                {language === 'English'
+                  ? 'Test your knowledge'
+                  : 'اختبر ما تعلمت'}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

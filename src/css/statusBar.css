@@ -1,9 +1,10 @@
 .statusBar {
   width: 100%;
   background-color: #eee;
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
   justify-content: space-around;
   padding: 1rem 2rem;
   text-transform: uppercase;
+  margin-bottom: 3rem;
 }

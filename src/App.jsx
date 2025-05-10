@@ -8,7 +8,7 @@ import PageNotFound from './Pages/PageNotFound';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 import LearningPage from './Pages/LearningPage';
-
+import UploadPage from './Pages/UploadPage';
 export default function App() {
   return (
     <BrowserRouter>
@@ -21,6 +21,7 @@ export default function App() {
             <Route path="register" element={<RegisterForm />} />
           </Route>
           <Route path="learning" element={<LearningPage />} />
+          <Route path="upload" element={<UploadPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </StudentProvider>
